@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eu">
+<html lang="uk">
 
 <head>
   <meta charset="UTF-8">
@@ -13,17 +13,17 @@
 
   <!-- Голова-Шапка сайты -->
   <header>
-    <!-- Блок оформления фона header-->
+    <!-- Блок оформления фона header -->
     <div class="header-background">
       <!-- Панель навигации из двух частей -->
 
       <!-- Панель навигации #1 - Логотип, Студія, Портфоліо -->
       <nav class="pages">
         <!-- Логотип, WebStudio -->
-        <a href="/">WebStudio</a>
+        <a class="webstudio-logo" href="https://alexanderksua.github.io/goit-markup-hw-01/"><span>Web</span>Studio</a>
         <!-- Список ссылок на страницы -->
-        <ul>
-          <li><a href="/">Студія</a></li>
+        <ul class="pages">
+          <li><a class="pages-studio-hover" href="https://alexanderksua.github.io/goit-markup-hw-01/">Студія</a></li>
           <li><a href="portfolio.html">Портфоліо</a></li>
           <li><a href="">Контакти</a></li>
         </ul>
@@ -33,14 +33,24 @@
 
     <!-- Панель навигации #2 - Контакти: e-mail, tel -->
     <div class="contacts">
-      <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+      <a class="contacts-email-hover" href="mailto:info@devstudio.com">info@devstudio.com</a>
       <a href="tel:+380961111111">+38 096 111 11 11</a>
     </div>
 
+    <!-- 
+      <div class="pointers">
+      <img src="./images/finger.svg" alt="Палець вказувач" title="Палець вказує на посилання сторінки Студії"
+        width="13.33" height="16">
+      <img src="./images/finger.svg" alt="Палець вказувач" title="Палець вказує на посилання електронної пошти Студії"
+        width="13.33" height="16">
+    </div> 
+  -->
+
   </header>
+
   <!--Главный контент страницы -->
   <main>
-    <!-- Блок оформления фона main-top -->
+    <!-- Блок оформления фона main-top - Hero -->
     <section class="main-top-section-background">
       <h1>Ефективні рішення для вашого бізнесу</h1>
       <button>Замовити послугу</button>
@@ -49,34 +59,43 @@
 
     <!-- Секция описания качеств Студии-->
     <section class="qualitie">
-      <div class="qualitie-details">
-        <h3 class="qualitie-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-        <p class="qualitie-paragraf">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
-      </div>
-      <div class="qualitie-punctual">
-        <h3 class="qualitie-title">ПУНКТУАЛЬНІСТЬ</h3>
-        <p class="qualitie-paragraf">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-      </div>
-      <div class="qualitie-planning">
-        <h3 class="qualitie-title">ПЛАНУВАННЯ</h3>
-        <p class="qualitie-paragraf">Так само консультація з широким активом значною мірою зумовлює.</p>
-      </div>
-      <div class="qualitie-techs">
-        <h3 class="qualitie-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-        <p class="qualitie-paragraf">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
-      </div>
+      <!-- Заголовок отсутствующий в макете, позже будет скрыт в Стилях,
+         он для Асистивных технологий  и Search Engine Optimisation -->
+      <h2>Качества Студии</h2>
+      <ul class="qualitie-details">
+        <li>
+          <h3 class="qualitie-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+          <p class="qualitie-paragraf">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+        </li>
+
+        <li class="qualitie-punctual">
+          <h3 class="qualitie-title">ПУНКТУАЛЬНІСТЬ</h3>
+          <p class="qualitie-paragraf">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+        </li>
+
+        <li class="qualitie-planning">
+          <h3 class="qualitie-title">ПЛАНУВАННЯ</h3>
+          <p class="qualitie-paragraf">Так само консультація з широким активом значною мірою зумовлює.</p>
+        </li>
+
+        <li class="qualitie-techs">
+          <h3 class="qualitie-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+          <p class="qualitie-paragraf">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+        </li>
+      </ul>
     </section>
 
     <!-- Секция описания видов деятельность Студии-->
     <section class="specs">
       <h2 class="team-title">Чим ми займаємося</h2>
+      <!-- Блок оборачивания div  для стилизации в будущем -->
       <div class="specs-images">
-        <img src="./images/img_1_370x294.jpg" alt="PC, tablet, keyboard, notepad, mouse, monitor, pen, glasses"
-          title="Algorithmes and buisnes proccess" width="370" height="294">
-        <img src="./images/img_2_370x294.jpg" alt="Mobile phone, notebook, monitor, templates"
-          title="Mobile apps and Web Development" width="370" height="294">
-        <img src="./images/img_3_370x294.jpg" alt="tablet, color set, keyboard, mouse, mac pro" title="Visual Design"
-          width="370" height="294">
+        <img src="./images/img_1_370x294.jpg" alt="ПК, плнщет, клавіатура, блокнот, миша, монітор, карандаш, окуляри"
+          title="Процес створювання програмістом алгоритмів бізнес процесів" width="370" height="294">
+        <img src="./images/img_2_370x294.jpg" alt="Смартфон, ноутбук, монітор, шаблони візуального вигляду застосунків"
+          title="Розробка дизайну та логіки дії мобільного застосунку" width="370" height="294">
+        <img src="./images/img_3_370x294.jpg" alt="планшет, палітра кольорів, клавіатура, миша, мак про"
+          title="Творчій процес оформлення дизайну застосунків" width="370" height="294">
       </div>
     </section>
 
@@ -86,30 +105,34 @@
       <ul class="team-photos">
 
         <li>
-          <img src="./images/photo_1_270x260.jpg" alt="Photo of man. IT Product Designer" title="Igor Dem`yanenko"
-            width="270" height="260">
-          <p>Ігор Дем'яненко</p>
+          <img src="./images/photo_1_270x260.jpg" alt="Ігор Дем'яненко. Айті спеціаліст з розробки продуктів"
+            title="Ігор Дем'яненко. Айті спеціаліст з розробки продуктів" width="270" height="260">
+          <h3>Ігор Дем'яненко</h3>
           <p>Product Designer</p>
         </li>
 
         <li>
-          <img src="./images/photo_2_270x260.jpg" alt="Photo of woman. IT Frontend Developer" title="Olga Repina"
-            width="270" height="260">
-          <p>Ольга Рєпіна</p>
+          <img src="./images/photo_2_270x260.jpg" alt="Ольга Рєпіна. Айті спеціалістка з розробки зовнішних інтерфейсів"
+            title="Ольга Рєпіна. Айті спеціалістка з розробки зовнішних інтерфейсів" width="270" height="260">
+          <h3>Ольга Рєпіна</h3>
           <p>Frontend Developer</p>
         </li>
 
         <li>
-          <img src="./images/photo_3_270x260.jpg" alt="Photo of man. IT Marketing" title="Mykola Tarasov" width="270"
+          <img src="./images/photo_3_270x260.jpg"
+            alt="Микола Тарасов. Айті спеціаліст з розробки торгівельних стратегій та продажів"
+            title="Микола Тарасов. Айті спеціаліст з розробки торгівельних стратегій та продажів" width="270"
             height="260">
-          <p>Микола Тарасов</p>
+          <h3>Микола Тарасов</h3>
           <p>Marketing</p>
         </li>
 
         <li>
-          <img src="./images/photo_4_270x260.jpg" alt="Photo of man. IT UI Designer" title="Mykhaylo Ermakov"
-            width="270" height="260">
-          <p>Михайло Єрмаков</p>
+          <img src="./images/photo_4_270x260.jpg"
+            alt="Михайло Єрмаков. Айті спеціаліст з розробки інтерфейсів для користувачів"
+            title="Михайло Єрмаков. Айті спеціаліст з розробки зовнішних інтерфейсів для користувачів" width="270"
+            height="260">
+          <h3>Михайло Єрмаков</h3>
           <p>UI Designer</p>
         </li>
 
@@ -122,7 +145,7 @@
   <!-- Блок оформления фона main-top -->
   <footer class="footer-contacts">
     <!-- Текст-Лого WebStudio -->
-    <a href="/">WebStudio</a>
+    <a href="https://alexanderksua.github.io/goit-markup-hw-01/" class="webstudio-logo"><span>Web</span>Studio</a>
     <address>
       <!-- Адрес физический  Студии -->
       <p>м. Київ, пр-т Лесі Українки, 26</p>
