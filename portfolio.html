@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>portfolio</title>
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
@@ -18,21 +19,23 @@
       <!-- Панель навигации #1 - Логотип, Студія, Портфоліо -->
       <nav class="pages">
         <!-- Логотип, WebStudio -->
-        <a href="https://alexanderksua.github.io/goit-markup-hw-01/index.html">WebStudio</a>
+        <a class="webstudio-logo" href="./index.html"><span>Web</span>Studio</a>
         <!-- Список ссылок на страницы -->
-        <ul>
-          <li><a href="https://alexanderksua.github.io/goit-markup-hw-01/index.html">Студія</a></li>
-          <li><a href="https://alexanderksua.github.io/goit-markup-hw-01/portfolio.html">Портфоліо</a></li>
+        <ul class="pages">
+          <li><a class="pages-studio-hover" href="./index.html">Студія</a></li>
+          <li><a href="./portfolio.html">Портфоліо</a></li>
           <li><a href="">Контакти</a></li>
         </ul>
       </nav>
     </div>
 
+
     <!-- Панель навигации #2 - Контакти: e-mail, tel -->
-    <div class="contacts">
-      <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-      <a href="tel:+380961111111">+38 096 111 11 11</a>
-    </div>
+    <ul class="contacts">
+      <li><a class="contacts-email-hover" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+      <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+    </ul>
+
   </header>
 
   <main>
@@ -40,17 +43,26 @@
   </main>
 
   <!-- Подвал страницы -->
-  <!-- Блок оформления фона main-top -->
   <footer class="footer-contacts">
     <!-- Текст-Лого WebStudio -->
-    <a href="https://alexanderksua.github.io/goit-markup-hw-01/index.html">WebStudio</a>
+    <a href="./index.html" class="webstudio-logo"><span>Web</span>Studio</a>
     <address>
-      <!-- Адрес физический  Студии -->
-      <p>м. Київ, пр-т Лесі Українки, 26</p>
-      <!-- Почта электронная  Студии -->
-      <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-      <!-- Телефон мобильный Студии -->
-      <a href="tel:+380961111111">+38 096 111 11 11</a>
+
+      <ul>
+        <li>
+          <!-- Адрес физический  Студии -->
+          <a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9">м. Київ, пр-т Лесі Українки, 26</a>
+        </li>
+        <li>
+          <!-- Почта электронная  Студии -->
+          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+        <li>
+          <!-- Телефон мобильный Студии -->
+          <a href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+      </ul>
+
     </address>
 
   </footer>
